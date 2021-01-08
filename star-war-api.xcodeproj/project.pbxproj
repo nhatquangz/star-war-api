@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2399285025A7916800BC1D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2399284F25A7916800BC1D7D /* AppDelegate.swift */; };
-		2399285225A7916800BC1D7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2399285125A7916800BC1D7D /* SceneDelegate.swift */; };
-		2399285425A7916800BC1D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2399285325A7916800BC1D7D /* ViewController.swift */; };
-		2399285725A7916800BC1D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2399285525A7916800BC1D7D /* Main.storyboard */; };
 		2399285925A7916B00BC1D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2399285825A7916B00BC1D7D /* Assets.xcassets */; };
 		2399285C25A7916B00BC1D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2399285A25A7916B00BC1D7D /* LaunchScreen.storyboard */; };
+		2399288025A7994100BC1D7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2399287F25A7994100BC1D7D /* HomeViewController.swift */; };
+		239928A225A7D55B00BC1D7D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928A125A7D55B00BC1D7D /* ListViewController.swift */; };
+		239928AD25A9050800BC1D7D /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928AC25A9050800BC1D7D /* Codable+Extensions.swift */; };
+		239928B325A9069D00BC1D7D /* STJEDISE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 239928B225A9069D00BC1D7D /* STJEDISE.TTF */; };
+		239928CF25A911AD00BC1D7D /* HomeMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928CD25A911AD00BC1D7D /* HomeMenuItemView.swift */; };
+		239928D025A911AD00BC1D7D /* HomeMenuItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239928CE25A911AD00BC1D7D /* HomeMenuItemView.xib */; };
+		AD7FFFDBA972EBB7DA418397 /* Pods_star_war_api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF38D877E4D526B24374C58A /* Pods_star_war_api.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2399284C25A7916800BC1D7D /* star-war-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "star-war-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2399284F25A7916800BC1D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2399285125A7916800BC1D7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2399285325A7916800BC1D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2399285625A7916800BC1D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2399285825A7916B00BC1D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2399285B25A7916B00BC1D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2399285D25A7916B00BC1D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2399287F25A7994100BC1D7D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		239928A125A7D55B00BC1D7D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		239928AC25A9050800BC1D7D /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
+		239928B225A9069D00BC1D7D /* STJEDISE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = STJEDISE.TTF; sourceTree = "<group>"; };
+		239928CD25A911AD00BC1D7D /* HomeMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuItemView.swift; sourceTree = "<group>"; };
+		239928CE25A911AD00BC1D7D /* HomeMenuItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMenuItemView.xib; sourceTree = "<group>"; };
+		96D045FE44ACE195466AA01A /* Pods-star-war-api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-star-war-api.debug.xcconfig"; path = "Target Support Files/Pods-star-war-api/Pods-star-war-api.debug.xcconfig"; sourceTree = "<group>"; };
+		9E32C52A7EE83E85D1B00C8C /* Pods-star-war-api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-star-war-api.release.xcconfig"; path = "Target Support Files/Pods-star-war-api/Pods-star-war-api.release.xcconfig"; sourceTree = "<group>"; };
+		FF38D877E4D526B24374C58A /* Pods_star_war_api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_star_war_api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7FFFDBA972EBB7DA418397 /* Pods_star_war_api.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				2399284E25A7916800BC1D7D /* star-war-api */,
 				2399284D25A7916800BC1D7D /* Products */,
+				88ADA109C68A8437DF0823B7 /* Pods */,
+				A48648F5B4FAC64AEA590D8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,115 @@
 		2399284E25A7916800BC1D7D /* star-war-api */ = {
 			isa = PBXGroup;
 			children = (
+				239928B025A9063C00BC1D7D /* SupportingFiles */,
+				239928AB25A904D900BC1D7D /* Extensions */,
+				2399287D25A798CC00BC1D7D /* Services */,
+				2399287C25A798A600BC1D7D /* UIComponents */,
+				2399287B25A7989200BC1D7D /* AppModules */,
+				2399287A25A7988200BC1D7D /* Models */,
 				2399284F25A7916800BC1D7D /* AppDelegate.swift */,
-				2399285125A7916800BC1D7D /* SceneDelegate.swift */,
-				2399285325A7916800BC1D7D /* ViewController.swift */,
-				2399285525A7916800BC1D7D /* Main.storyboard */,
 				2399285825A7916B00BC1D7D /* Assets.xcassets */,
 				2399285A25A7916B00BC1D7D /* LaunchScreen.storyboard */,
 				2399285D25A7916B00BC1D7D /* Info.plist */,
 			);
 			path = "star-war-api";
+			sourceTree = "<group>";
+		};
+		2399287A25A7988200BC1D7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2399287B25A7989200BC1D7D /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				239928A025A7D54500BC1D7D /* ListViewController */,
+				2399287E25A7990C00BC1D7D /* HomeViewController */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		2399287C25A798A600BC1D7D /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				239928CC25A9112F00BC1D7D /* HomeMenuItem */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		2399287D25A798CC00BC1D7D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2399287E25A7990C00BC1D7D /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2399287F25A7994100BC1D7D /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		239928A025A7D54500BC1D7D /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				239928A125A7D55B00BC1D7D /* ListViewController.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		239928AB25A904D900BC1D7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				239928AC25A9050800BC1D7D /* Codable+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		239928B025A9063C00BC1D7D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				239928B125A9064A00BC1D7D /* Fonts */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		239928B125A9064A00BC1D7D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				239928B225A9069D00BC1D7D /* STJEDISE.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		239928CC25A9112F00BC1D7D /* HomeMenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				239928CD25A911AD00BC1D7D /* HomeMenuItemView.swift */,
+				239928CE25A911AD00BC1D7D /* HomeMenuItemView.xib */,
+			);
+			path = HomeMenuItem;
+			sourceTree = "<group>";
+		};
+		88ADA109C68A8437DF0823B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96D045FE44ACE195466AA01A /* Pods-star-war-api.debug.xcconfig */,
+				9E32C52A7EE83E85D1B00C8C /* Pods-star-war-api.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A48648F5B4FAC64AEA590D8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF38D877E4D526B24374C58A /* Pods_star_war_api.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2399286025A7916B00BC1D7D /* Build configuration list for PBXNativeTarget "star-war-api" */;
 			buildPhases = (
+				A26652C6C6F431EEBBB0D433 /* [CP] Check Pods Manifest.lock */,
 				2399284825A7916800BC1D7D /* Sources */,
 				2399284925A7916800BC1D7D /* Frameworks */,
 				2399284A25A7916800BC1D7D /* Resources */,
+				9D22D4964434BCC8F4872A0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,35 +240,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				2399285C25A7916B00BC1D7D /* LaunchScreen.storyboard in Resources */,
+				239928D025A911AD00BC1D7D /* HomeMenuItemView.xib in Resources */,
+				239928B325A9069D00BC1D7D /* STJEDISE.TTF in Resources */,
 				2399285925A7916B00BC1D7D /* Assets.xcassets in Resources */,
-				2399285725A7916800BC1D7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D22D4964434BCC8F4872A0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-star-war-api/Pods-star-war-api-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-star-war-api/Pods-star-war-api-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-star-war-api/Pods-star-war-api-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26652C6C6F431EEBBB0D433 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-star-war-api-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2399284825A7916800BC1D7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2399285425A7916800BC1D7D /* ViewController.swift in Sources */,
+				239928CF25A911AD00BC1D7D /* HomeMenuItemView.swift in Sources */,
+				239928AD25A9050800BC1D7D /* Codable+Extensions.swift in Sources */,
+				2399288025A7994100BC1D7D /* HomeViewController.swift in Sources */,
 				2399285025A7916800BC1D7D /* AppDelegate.swift in Sources */,
-				2399285225A7916800BC1D7D /* SceneDelegate.swift in Sources */,
+				239928A225A7D55B00BC1D7D /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2399285525A7916800BC1D7D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2399285625A7916800BC1D7D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2399285A25A7916B00BC1D7D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,12 +435,14 @@
 		};
 		2399286125A7916B00BC1D7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D045FE44ACE195466AA01A /* Pods-star-war-api.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YMMS76DWJ;
 				INFOPLIST_FILE = "star-war-api/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +456,14 @@
 		};
 		2399286225A7916B00BC1D7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E32C52A7EE83E85D1B00C8C /* Pods-star-war-api.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YMMS76DWJ;
 				INFOPLIST_FILE = "star-war-api/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
