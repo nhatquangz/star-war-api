@@ -16,6 +16,13 @@
 		239928B325A9069D00BC1D7D /* STJEDISE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 239928B225A9069D00BC1D7D /* STJEDISE.TTF */; };
 		239928CF25A911AD00BC1D7D /* HomeMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928CD25A911AD00BC1D7D /* HomeMenuItemView.swift */; };
 		239928D025A911AD00BC1D7D /* HomeMenuItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239928CE25A911AD00BC1D7D /* HomeMenuItemView.xib */; };
+		239928D325A91D5D00BC1D7D /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928D225A91D5D00BC1D7D /* AppConstant.swift */; };
+		239928D825A91F7A00BC1D7D /* ListItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928D625A91F7A00BC1D7D /* ListItemViewCell.swift */; };
+		239928D925A91F7A00BC1D7D /* ListItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239928D725A91F7A00BC1D7D /* ListItemViewCell.xib */; };
+		239928E425A9319900BC1D7D /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928E325A9319900BC1D7D /* ViewController+Extension.swift */; };
+		239928E925A9E6C200BC1D7D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928E825A9E6C200BC1D7D /* TitleView.swift */; };
+		239928ED25A9E9AD00BC1D7D /* TransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928EC25A9E9AD00BC1D7D /* TransparentNavigationController.swift */; };
+		239928F025A9F38E00BC1D7D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239928EF25A9F38E00BC1D7D /* UIColor+Extensions.swift */; };
 		AD7FFFDBA972EBB7DA418397 /* Pods_star_war_api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF38D877E4D526B24374C58A /* Pods_star_war_api.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +38,13 @@
 		239928B225A9069D00BC1D7D /* STJEDISE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = STJEDISE.TTF; sourceTree = "<group>"; };
 		239928CD25A911AD00BC1D7D /* HomeMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuItemView.swift; sourceTree = "<group>"; };
 		239928CE25A911AD00BC1D7D /* HomeMenuItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMenuItemView.xib; sourceTree = "<group>"; };
+		239928D225A91D5D00BC1D7D /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		239928D625A91F7A00BC1D7D /* ListItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewCell.swift; sourceTree = "<group>"; };
+		239928D725A91F7A00BC1D7D /* ListItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemViewCell.xib; sourceTree = "<group>"; };
+		239928E325A9319900BC1D7D /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		239928E825A9E6C200BC1D7D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		239928EC25A9E9AD00BC1D7D /* TransparentNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavigationController.swift; sourceTree = "<group>"; };
+		239928EF25A9F38E00BC1D7D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		96D045FE44ACE195466AA01A /* Pods-star-war-api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-star-war-api.debug.xcconfig"; path = "Target Support Files/Pods-star-war-api/Pods-star-war-api.debug.xcconfig"; sourceTree = "<group>"; };
 		9E32C52A7EE83E85D1B00C8C /* Pods-star-war-api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-star-war-api.release.xcconfig"; path = "Target Support Files/Pods-star-war-api/Pods-star-war-api.release.xcconfig"; sourceTree = "<group>"; };
 		FF38D877E4D526B24374C58A /* Pods_star_war_api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_star_war_api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +116,9 @@
 		2399287C25A798A600BC1D7D /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				239928EB25A9E97600BC1D7D /* TransparentNavigationController */,
+				239928E625A9E53900BC1D7D /* TitleView */,
+				239928D525A91F5200BC1D7D /* ListItemViewCell */,
 				239928CC25A9112F00BC1D7D /* HomeMenuItem */,
 			);
 			path = UIComponents;
@@ -134,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				239928AC25A9050800BC1D7D /* Codable+Extensions.swift */,
+				239928E325A9319900BC1D7D /* ViewController+Extension.swift */,
+				239928EF25A9F38E00BC1D7D /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -142,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				239928B125A9064A00BC1D7D /* Fonts */,
+				239928D225A91D5D00BC1D7D /* AppConstant.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -161,6 +181,31 @@
 				239928CE25A911AD00BC1D7D /* HomeMenuItemView.xib */,
 			);
 			path = HomeMenuItem;
+			sourceTree = "<group>";
+		};
+		239928D525A91F5200BC1D7D /* ListItemViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				239928D625A91F7A00BC1D7D /* ListItemViewCell.swift */,
+				239928D725A91F7A00BC1D7D /* ListItemViewCell.xib */,
+			);
+			path = ListItemViewCell;
+			sourceTree = "<group>";
+		};
+		239928E625A9E53900BC1D7D /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				239928E825A9E6C200BC1D7D /* TitleView.swift */,
+			);
+			path = TitleView;
+			sourceTree = "<group>";
+		};
+		239928EB25A9E97600BC1D7D /* TransparentNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				239928EC25A9E9AD00BC1D7D /* TransparentNavigationController.swift */,
+			);
+			path = TransparentNavigationController;
 			sourceTree = "<group>";
 		};
 		88ADA109C68A8437DF0823B7 /* Pods */ = {
@@ -241,6 +286,7 @@
 			files = (
 				2399285C25A7916B00BC1D7D /* LaunchScreen.storyboard in Resources */,
 				239928D025A911AD00BC1D7D /* HomeMenuItemView.xib in Resources */,
+				239928D925A91F7A00BC1D7D /* ListItemViewCell.xib in Resources */,
 				239928B325A9069D00BC1D7D /* STJEDISE.TTF in Resources */,
 				2399285925A7916B00BC1D7D /* Assets.xcassets in Resources */,
 			);
@@ -296,10 +342,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				239928CF25A911AD00BC1D7D /* HomeMenuItemView.swift in Sources */,
+				239928D825A91F7A00BC1D7D /* ListItemViewCell.swift in Sources */,
+				239928ED25A9E9AD00BC1D7D /* TransparentNavigationController.swift in Sources */,
 				239928AD25A9050800BC1D7D /* Codable+Extensions.swift in Sources */,
 				2399288025A7994100BC1D7D /* HomeViewController.swift in Sources */,
+				239928E425A9319900BC1D7D /* ViewController+Extension.swift in Sources */,
+				239928F025A9F38E00BC1D7D /* UIColor+Extensions.swift in Sources */,
+				239928D325A91D5D00BC1D7D /* AppConstant.swift in Sources */,
 				2399285025A7916800BC1D7D /* AppDelegate.swift in Sources */,
 				239928A225A7D55B00BC1D7D /* ListViewController.swift in Sources */,
+				239928E925A9E6C200BC1D7D /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

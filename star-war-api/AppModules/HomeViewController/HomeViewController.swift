@@ -7,6 +7,8 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
 
@@ -21,6 +23,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
 	func setup() {
 		self.navigationController?.isNavigationBarHidden = true
+		self.navigationItem.backButtonTitle = ""
 		
 		/// Add background view
 		let backgroundView = UIImageView(image: UIImage(named: "starwar-4"))
@@ -50,12 +53,16 @@ extension HomeViewController {
 			make.width.equalToSuperview().multipliedBy(0.6).priority(750)
 			make.width.lessThanOrEqualTo(250)
 		}
-		let icons = ["people-icon", "planet-icon", "starship-icon"]
-		let titles = ["people", "planets", "starships"]
-		for (index, name) in icons.enumerated() {
-			let itemView = HomeMenuItemView(icon: UIImage(named: name), title: titles[index])
+		for item in StarWarsResources.allCases {
+			let itemView = HomeMenuItemView(icon: item.icon, title: item.title)
 			menuStackView.addArrangedSubview(itemView)
 			itemView.snp.makeConstraints { $0.height.equalTo(50) }
+			_ = itemView.goDetailButton.rx.tap.asDriver()
+				.throttle(.seconds(1))
+				.drive(onNext: { [weak self] in
+					let listViewController = ListViewController(resource: item)
+					self?.navigationController?.pushViewController(listViewController, animated: true)
+				})
 		}
 	}
 }
