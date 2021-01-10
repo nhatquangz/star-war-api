@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 enum StarWarsResources: CaseIterable {
+	
 	case people, planet, starship
 	
 	var title: String {

@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class HomeViewController: UIViewController {
+class HomeViewController: TransparentBarViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +23,9 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
 	func setup() {
 		self.navigationController?.isNavigationBarHidden = true
-		self.navigationItem.backButtonTitle = ""
 		
 		/// Add background view
-		let backgroundView = UIImageView(image: UIImage(named: "starwar-4"))
-		backgroundView.contentMode = .scaleAspectFill
-		self.view.addSubview(backgroundView)
-		backgroundView.snp.makeConstraints { (make) in
-			make.edges.equalToSuperview()
-		}
+		self.add(background: UIImage(named: "starwar-4"))
 		
 		/// Star Wars title
 		let titleLabel = UILabel()
@@ -60,7 +54,7 @@ extension HomeViewController {
 			_ = itemView.goDetailButton.rx.tap.asDriver()
 				.throttle(.seconds(1))
 				.drive(onNext: { [weak self] in
-					let listViewController = ListViewController(resource: item)
+					let listViewController = ListViewController(resourceType: item)
 					self?.navigationController?.pushViewController(listViewController, animated: true)
 				})
 		}

@@ -24,5 +24,10 @@ class ListItemViewCell: UITableViewCell {
 		self.selectionStyle = .none
     }
 	
+	func config(data: Displayable) {
+		iconImageView.image = data.icon
+		titleLabel.text = data.title
+		subtitleLabel.text = data.subtitle
+	}
 
 }

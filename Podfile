@@ -8,6 +8,7 @@ target 'star-war-api' do
   # Pods for star-war-api
 	pod 'RxSwift', '5.1.1'
 	pod 'RxCocoa', '5.1.1'
+	pod 'RxSwiftExt', '5.2.0'
 	pod 'Alamofire', '5.4.1'
 	pod 'SnapKit', '5.0.1'
 end

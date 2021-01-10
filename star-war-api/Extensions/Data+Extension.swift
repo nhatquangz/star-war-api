@@ -1,8 +1,8 @@
 //
-//  Codable+Extensions.swift
+//  Data+Extension.swift
 //  star-war-api
 //
-//  Created by nhatquangz on 08/01/2021.
+//  Created by nhatquangz on 09/01/2021.
 //
 
 import Foundation

@@ -22,7 +22,7 @@ class TitleView: UIView {
 		setup()
 	}
 	
-	convenience init(icon: UIImage?, title: String, color: UIColor) {
+	convenience init(icon: UIImage? = nil, title: String, color: UIColor) {
 		self.init()
 		iconImageView.image = icon?.withRenderingMode(.alwaysTemplate)
 		titleLabel.text = title
