@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233D5CB725ABB5F7003F797E /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D5CB625ABB5F7003F797E /* Mocker.swift */; };
+		233D5CC925ABB7F4003F797E /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 233D5CC625ABB7F4003F797E /* people.json */; };
+		233D5CCA25ABB7F4003F797E /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = 233D5CC725ABB7F4003F797E /* planets.json */; };
+		233D5CCB25ABB7F4003F797E /* starships.json in Resources */ = {isa = PBXBuildFile; fileRef = 233D5CC825ABB7F4003F797E /* starships.json */; };
+		233D5CCF25ABC1F5003F797E /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = 233D5CCD25ABC1F5003F797E /* person.json */; };
+		233D5CD025ABC1F5003F797E /* starship.json in Resources */ = {isa = PBXBuildFile; fileRef = 233D5CCE25ABC1F5003F797E /* starship.json */; };
 		2399285025A7916800BC1D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2399284F25A7916800BC1D7D /* AppDelegate.swift */; };
 		2399285925A7916B00BC1D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2399285825A7916B00BC1D7D /* Assets.xcassets */; };
 		2399285C25A7916B00BC1D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2399285A25A7916B00BC1D7D /* LaunchScreen.storyboard */; };
@@ -37,6 +43,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		233D5CB625ABB5F7003F797E /* Mocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
+		233D5CC625ABB7F4003F797E /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		233D5CC725ABB7F4003F797E /* planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
+		233D5CC825ABB7F4003F797E /* starships.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starships.json; sourceTree = "<group>"; };
+		233D5CCD25ABC1F5003F797E /* person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = person.json; sourceTree = "<group>"; };
+		233D5CCE25ABC1F5003F797E /* starship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starship.json; sourceTree = "<group>"; };
 		2399284C25A7916800BC1D7D /* star-war-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "star-war-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2399284F25A7916800BC1D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2399285825A7916B00BC1D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +94,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233D5CC225ABB66C003F797E /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				233D5CCD25ABC1F5003F797E /* person.json */,
+				233D5CCE25ABC1F5003F797E /* starship.json */,
+				233D5CC625ABB7F4003F797E /* people.json */,
+				233D5CC725ABB7F4003F797E /* planets.json */,
+				233D5CC825ABB7F4003F797E /* starships.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 		2399284325A7916700BC1D7D = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +179,7 @@
 			children = (
 				2399291225AA0AB700BC1D7D /* AppRequests.swift */,
 				2399291525AA0AF100BC1D7D /* RequestPaths.swift */,
+				233D5CB625ABB5F7003F797E /* Mocker.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,6 +214,7 @@
 		239928B025A9063C00BC1D7D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				233D5CC225ABB66C003F797E /* MockData */,
 				239928B125A9064A00BC1D7D /* Fonts */,
 			);
 			path = SupportingFiles;
@@ -324,9 +350,14 @@
 			files = (
 				2399285C25A7916B00BC1D7D /* LaunchScreen.storyboard in Resources */,
 				239928D025A911AD00BC1D7D /* HomeMenuItemView.xib in Resources */,
+				233D5CCA25ABB7F4003F797E /* planets.json in Resources */,
+				233D5CCF25ABC1F5003F797E /* person.json in Resources */,
+				233D5CC925ABB7F4003F797E /* people.json in Resources */,
+				233D5CD025ABC1F5003F797E /* starship.json in Resources */,
 				239928D925A91F7A00BC1D7D /* ListItemViewCell.xib in Resources */,
 				239928B325A9069D00BC1D7D /* STJEDISE.TTF in Resources */,
 				2399285925A7916B00BC1D7D /* Assets.xcassets in Resources */,
+				233D5CCB25ABB7F4003F797E /* starships.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +412,7 @@
 			files = (
 				239928CF25A911AD00BC1D7D /* HomeMenuItemView.swift in Sources */,
 				2399290525AA066800BC1D7D /* StarshipModel.swift in Sources */,
+				233D5CB725ABB5F7003F797E /* Mocker.swift in Sources */,
 				239928D825A91F7A00BC1D7D /* ListItemViewCell.swift in Sources */,
 				239928F525A9FBD200BC1D7D /* DetailViewController.swift in Sources */,
 				2399290225AA03AF00BC1D7D /* PlanetModel.swift in Sources */,

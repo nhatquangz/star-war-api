@@ -68,7 +68,7 @@ extension ListViewController {
 		tableView.delegate = self
 		
 		refreshControl.rx.controlEvent(.valueChanged)
-			.throttle(.seconds(5), scheduler: MainScheduler.instance)
+			.throttle(.seconds(3), scheduler: MainScheduler.instance)
 			.bind(to: viewModel.refreshData)
 			.disposed(by: disposeBag)
 		

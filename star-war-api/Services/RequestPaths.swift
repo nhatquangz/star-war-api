@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum RequestPath: String {
+enum RequestPath: String, CaseIterable {
 	case people = "people"
 	case planets = "planets"
 	case starships = "starships"
 	
 	var url: String {
-		let base = "https://swapi.dev/api/"
+		let base = "http://swapi.dev/api/"
 		return "\(base)\(self.rawValue)"
 	}
 }
