@@ -17,6 +17,12 @@ class AppRequest {
 	private(set) var method: HTTPMethod = .get
 	private(set) var parameters: [String: Any]?
 	
+	static private let session: Session = {
+		let manager = ServerTrustManager(allHostsMustBeEvaluated: false,
+										 evaluators: ["swapi.dev": DisabledTrustEvaluator()])
+		return Session(serverTrustManager: manager)
+	}()
+	
 	init(_ url: String) {
 		self.url = url
 	}
@@ -42,7 +48,8 @@ class AppRequest {
 	
 	func request<T>(_ type: T.Type? = nil) -> Observable<Result<T, Error>> where T: Decodable {
 		return Observable<Result<T, Error>>.create { observer -> Disposable in
-			AF.request(self.url, parameters: self.parameters).validate()
+			AppRequest.session.request(self.url, parameters: self.parameters)
+				.validate()
 				.responseDecodable(of: T.self) { (response) in
 					switch response.result {
 					case .success(let value):

@@ -33,13 +33,17 @@ class ListViewController: TransparentBarViewController {
         super.viewDidLoad()
 		setup()
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.navigationController?.navigationBar.tintColor = resourceType.color
+	}
 }
 
 // MARK: - Setup
 extension ListViewController {
 	func setup() {
 		self.navigationController?.isNavigationBarHidden = false
-		self.navigationController?.navigationBar.tintColor = resourceType.color
 		
 		let titleView = TitleView(icon: resourceType.icon, title: resourceType.title, color: resourceType.color)
 		self.navigationItem.titleView = titleView
@@ -98,7 +102,6 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
 		if indexPath.row == viewModel.dataSource.value.count - 3 {
 			viewModel.loadData.onNext(())
 		}
-		
 		return viewCell
 	}
 	

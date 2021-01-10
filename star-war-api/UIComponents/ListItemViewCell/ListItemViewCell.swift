@@ -15,8 +15,6 @@ class ListItemViewCell: UITableViewCell {
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var subtitleLabel: UILabel!
 	
-	@IBOutlet weak var goDetailButton: UIButton!
-	
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

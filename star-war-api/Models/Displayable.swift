@@ -20,7 +20,7 @@ extension PersonModel: Displayable {
 	}
 	
 	var subtitle: String {
-		return birthYear
+		return "Birth Year: \(birthYear)"
 	}
 	
 	var icon: UIImage? {
@@ -35,7 +35,7 @@ extension PlanetModel: Displayable {
 	}
 	
 	var subtitle: String {
-		return population
+		return "Climate: \(climate)"
 	}
 	
 	var icon: UIImage? {
@@ -50,7 +50,7 @@ extension StarshipModel: Displayable {
 	}
 	
 	var subtitle: String {
-		return model
+		return "Model: \(model)"
 	}
 	
 	var icon: UIImage? {
