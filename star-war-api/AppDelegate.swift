@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		self.window?.rootViewController = navigationViewController
 		self.window?.makeKeyAndVisible()
 		navigationViewController.viewControllers = [HomeViewController()]
-		MockedNetwork()
 		return true
 	}
 }

@@ -48,7 +48,7 @@ class AppRequest {
 	
 	func request<T>(_ type: T.Type? = nil) -> Observable<Result<T, Error>> where T: Decodable {
 		return Observable<Result<T, Error>>.create { observer -> Disposable in
-			MockedNetwork.sessionManager.request(self.url, parameters: self.parameters)
+			AF.request(self.url, parameters: self.parameters)
 				.validate()
 				.responseDecodable(of: T.self) { (response) in
 					switch response.result {

@@ -11,6 +11,4 @@ target 'star-war-api' do
 	pod 'RxSwiftExt', '5.2.0'
 	pod 'Alamofire', '5.4.1'
 	pod 'SnapKit', '5.0.1'
-	##
-	pod 'Mocker', '~> 2.2.0'
 end

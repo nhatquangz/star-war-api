@@ -36,8 +36,10 @@ class DetailViewModel {
 						   "Birth Year: \(data.birthYear)",
 						   "Gender: \(data.gender)"]
 			resourceType = .people
-			listSectionName = "Starships"
-			get(resources: data.starships, of: .starship)
+			if data.starships.count > 0 {
+				listSectionName = "Starships"
+				get(resources: data.starships, of: .starship)
+			}
 			
 		} else if let data = item as? PlanetModel {
 			information = ["Rotation Period: \(data.rotationPeriod)",
@@ -49,8 +51,10 @@ class DetailViewModel {
 						   "Surface Water: \(data.surfaceWater)",
 						   "Population: \(data.population)"]
 			resourceType = .planet
-			listSectionName = "Residents"
-			get(resources: data.residents, of: .people)
+			if data.residents.count > 0 {
+				listSectionName = "Residents"
+				get(resources: data.residents, of: .people)
+			}
 			
 		} else if let data = item as? StarshipModel {
 			information = ["Model: \(data.model)",
