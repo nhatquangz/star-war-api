@@ -1,5 +1,6 @@
 # star-war-api
 Simple app showing people, planets and starships resources from swapi.dev
+
 Demo video: https://vimeo.com/manage/499023642
 
 ### People
